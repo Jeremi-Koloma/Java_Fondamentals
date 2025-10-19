@@ -6,12 +6,12 @@ public class Main {
 
         CollectionsManupulations collectionsManupulations = new CollectionsManupulations();
 
-        // ArrayList
+        // ArrayList: Accès par index
         List<String> myArrayList = collectionsManupulations.getMyArrayList();
         System.out.println("==== ArrayList: ");
         System.out.println(myArrayList.get(1)+ "\n");
 
-        // LinkedList
+        // LinkedList: Accès par index
         List<String> myLinkedList = collectionsManupulations.getMyLinkedList();
         System.out.println("==== LinkedList: ");
         System.out.println(myLinkedList.get(2)+ "\n");

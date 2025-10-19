@@ -5,9 +5,9 @@ public class CollectionsManupulations {
      * LES INTERFACES PRINCIPALES
      * Listes Ordonnées,
      *  Doublons permis
-     *  Accès à l'index
+     *  Accès par index
      */
-    // ArrayList : Rapide en accès, Mais lent en insertion au milieu
+    // ArrayList: Rapide en accès, Mais lent en insertion au milieu
     public List<String> getMyArrayList() {
         List<String> myList = new ArrayList<>();
 
@@ -35,6 +35,7 @@ public class CollectionsManupulations {
      * Pas de doublons
      * Non indexé.
      */
+    // HashSet: Pas d'odre garanti, rapide.
     public Set<String> getMyHashSet() {
         Set<String> mySets = new HashSet<>();
 
