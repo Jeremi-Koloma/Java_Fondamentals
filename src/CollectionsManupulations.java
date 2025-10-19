@@ -10,15 +10,13 @@ public class CollectionsManupulations {
      *  Doublons permis
      *  Accès à l'index
      */
-
-    List<String> myList = new ArrayList<>();
-
     public List<String> getMyList() {
-        List<String> list = myList;
-        list.add("A");
-        list.add("B");
-        list.add("A"); // doublons permis
-        return list;
+        List<String> myList = new ArrayList<>();
+
+        myList.add("A");
+        myList.add("B");
+        myList.add("A"); // doublons permis
+        return myList;
     }
 
 
@@ -27,15 +25,14 @@ public class CollectionsManupulations {
      * Pas de doublons
      * Non indexé.
      */
-    Set<String> mySets = new HashSet<>();
-
     public Set<String> getMySets() {
-        Set<String> sets = new HashSet<>();
-        sets.add("A");
-        sets.add("B");
-        sets.add("A");
-        sets.add("A");
-        sets.add("C");
-        return sets;
+        Set<String> mySets = new HashSet<>();
+
+        mySets.add("A");
+        mySets.add("B");
+        mySets.add("A"); // ignoré
+        mySets.add("A"); // ignoré
+        mySets.add("C");
+        return mySets;
     }
 }
