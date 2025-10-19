@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionsManupulations {
     /**
@@ -10,7 +7,8 @@ public class CollectionsManupulations {
      *  Doublons permis
      *  Accès à l'index
      */
-    public List<String> getMyList() {
+    // ArrayList : Rapide en accès, Mais lent en insertion au milieu
+    public List<String> getMyArrayList() {
         List<String> myList = new ArrayList<>();
 
         myList.add("A");
@@ -19,13 +17,25 @@ public class CollectionsManupulations {
         return myList;
     }
 
+    // LinkedList: Rapide en insertion/Suppresion, plus lent en accès indexé.
+    public List<String> getMyLinkedList() {
+        List<String> myList = new LinkedList<>();
+
+        myList.add("A");
+        myList.add("B");
+        myList.add("C"); // doublons permis
+        myList.add("D");
+        myList.add("C"); // doublons permis
+        return  myList;
+    }
+
 
     /**
      * L'INTERFACE SET
      * Pas de doublons
      * Non indexé.
      */
-    public Set<String> getMySets() {
+    public Set<String> getMyHashSet() {
         Set<String> mySets = new HashSet<>();
 
         mySets.add("A");

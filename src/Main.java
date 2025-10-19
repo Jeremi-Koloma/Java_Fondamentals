@@ -6,12 +6,19 @@ public class Main {
 
         CollectionsManupulations collectionsManupulations = new CollectionsManupulations();
 
-        // List
-        List<String> list = collectionsManupulations.getMyList();
-        System.out.printf(list.get(1));
+        // ArrayList
+        List<String> myArrayList = collectionsManupulations.getMyArrayList();
+        System.out.println("==== ArrayList: ");
+        System.out.println(myArrayList.get(1)+ "\n");
 
-        // Set
-        Set<String> sets = collectionsManupulations.getMySets();
-        System.out.println(sets.size());
+        // LinkedList
+        List<String> myLinkedList = collectionsManupulations.getMyLinkedList();
+        System.out.println("==== LinkedList: ");
+        System.out.println(myLinkedList.get(2)+ "\n");
+
+        // HashSet
+        Set<String> myHashSet = collectionsManupulations.getMyHashSet();
+        System.out.println("==== HashSet: ");
+        System.out.println(myHashSet.size()+ "\n");
     }
 }
