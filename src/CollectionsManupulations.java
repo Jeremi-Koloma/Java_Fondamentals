@@ -50,12 +50,29 @@ public class CollectionsManupulations {
     // LinkedHashSet: Conserve l'ordre d'insertion.
     public LinkedHashSet<String> getMyLinkedHashSet() {
         LinkedHashSet<String> myHashSet = new LinkedHashSet<>();
+
         myHashSet.add("Papa");
         myHashSet.add("Pipi");
         myHashSet.add("Popo");
         myHashSet.add("Pepe");
         myHashSet.add("Pepe"); // ignoré
-
         return myHashSet;
+    }
+
+
+    /**
+     *  Stocke les éléments à traiter
+     *  Méthodes importantes : offer(), poll(), peek().
+     */
+
+    public Queue<String> getMyQueue() {
+        Queue<String> queue = new LinkedList<>();
+
+        queue.offer("A");
+        queue.offer("B");
+        queue.offer("C");
+        System.out.println("=== poll "+ queue.poll()); // A (supprime et retourne le 1er)
+        System.out.println("=== peek "+ queue.peek()); // B (retourne le 1er sans supprimer)
+        return queue;
     }
 }

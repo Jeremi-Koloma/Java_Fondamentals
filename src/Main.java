@@ -1,5 +1,6 @@
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 
 public class Main {
@@ -26,5 +27,10 @@ public class Main {
         LinkedHashSet<String> myLinkedHashSet = collectionsManupulations.getMyLinkedHashSet();
         System.out.println("==== LinkedHashSet: ");
         System.out.println(myLinkedHashSet.size()+ "\n");
+
+        // Queue:
+        Queue<String> myQueue = collectionsManupulations.getMyQueue();
+        System.out.println("==== Queue:");
+        System.out.println(myQueue.size());
     }
 }
