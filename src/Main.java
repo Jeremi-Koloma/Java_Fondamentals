@@ -1,3 +1,4 @@
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -16,9 +17,14 @@ public class Main {
         System.out.println("==== LinkedList: ");
         System.out.println(myLinkedList.get(2)+ "\n");
 
-        // HashSet
+        // HashSet: Pas d'ordre garanti
         Set<String> myHashSet = collectionsManupulations.getMyHashSet();
         System.out.println("==== HashSet: ");
         System.out.println(myHashSet.size()+ "\n");
+
+        // LinkedHashSet: Conserve l'ordre d'insertion
+        LinkedHashSet<String> myLinkedHashSet = collectionsManupulations.getMyLinkedHashSet();
+        System.out.println("==== LinkedHashSet: ");
+        System.out.println(myLinkedHashSet.size()+ "\n");
     }
 }

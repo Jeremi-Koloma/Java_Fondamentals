@@ -46,4 +46,16 @@ public class CollectionsManupulations {
         mySets.add("C");
         return mySets;
     }
+
+    // LinkedHashSet: Conserve l'ordre d'insertion.
+    public LinkedHashSet<String> getMyLinkedHashSet() {
+        LinkedHashSet<String> myHashSet = new LinkedHashSet<>();
+        myHashSet.add("Papa");
+        myHashSet.add("Pipi");
+        myHashSet.add("Popo");
+        myHashSet.add("Pepe");
+        myHashSet.add("Pepe"); // ignoré
+
+        return myHashSet;
+    }
 }
