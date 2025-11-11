@@ -75,4 +75,24 @@ public class CollectionsManupulations {
         System.out.println("=== peek "+ queue.peek()); // B (retourne le 1er sans supprimer)
         return queue;
     }
+
+
+    /**
+     *  Pas une Collection mais fait partie du framework
+     *  Chaque clé est unique
+     *  Une valeur peut se répéter
+     */
+
+    // HashMap: rapide, pas d’ordre.
+    public Map<String, Integer> getMyHasMap() {
+        Map<String, Integer> myHasMap = new HashMap<>();
+
+        // Key: Value
+        myHasMap.put("age", 15);
+        myHasMap.put("year", 2025);
+        myHasMap.put("day", 3);
+        myHasMap.put("age", 28); // remplace la valeur précédente
+        System.out.println(myHasMap.get("age")); // 28
+        return myHasMap;
+    }
 }

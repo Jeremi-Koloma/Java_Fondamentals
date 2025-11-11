@@ -1,7 +1,4 @@
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +28,11 @@ public class Main {
         // Queue:
         Queue<String> myQueue = collectionsManupulations.getMyQueue();
         System.out.println("==== Queue:");
-        System.out.println(myQueue.size());
+        System.out.println(myQueue.size()+ "\n");
+
+        // HashMap: Rapide, pas d'ordre
+        Map<String, Integer> myHashMap = collectionsManupulations.getMyHasMap();
+        System.out.println("==== myHashMap:");
+        System.out.println(myHashMap);
     }
 }
