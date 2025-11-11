@@ -95,4 +95,15 @@ public class CollectionsManupulations {
         System.out.println(myHasMap.get("age")); // 28
         return myHasMap;
     }
+
+    // LinkedHashMap: Conserve l'ordre d'insertion
+    public Map<String, String> getMyLinkedHashMap() {
+        Map<String, String> myLinkedHashMap = new LinkedHashMap<>();
+
+        myLinkedHashMap.put("job1", "Programmer");
+        myLinkedHashMap.put("job2", "Developper");
+        myLinkedHashMap.put("job3", "DevOps");
+        System.out.println(myLinkedHashMap.get("job2"));
+        return myLinkedHashMap;
+    }
 }

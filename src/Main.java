@@ -33,6 +33,11 @@ public class Main {
         // HashMap: Rapide, pas d'ordre
         Map<String, Integer> myHashMap = collectionsManupulations.getMyHasMap();
         System.out.println("==== myHashMap:");
-        System.out.println(myHashMap);
+        System.out.println(myHashMap+ "\n");
+
+        // LinkedHashMap: Conserve l'ordre d'insertion
+        Map<String, String> myLinkedHashMap = collectionsManupulations.getMyLinkedHashMap();
+        System.out.println("==== myLinkedHashMap:");
+        System.out.println(myLinkedHashMap);
     }
 }
