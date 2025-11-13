@@ -49,7 +49,7 @@ public class Main {
         System.out.println(collectionsManupulations.runWithForEachLoop()+ "\n");
 
         // stream with filter
-        System.out.println("==== stream filter:");
+        System.out.println("==== stream filter with letter 'A':");
         System.out.println(collectionsManupulations.runWithStreams());
     }
 }
