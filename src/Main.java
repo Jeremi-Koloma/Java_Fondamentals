@@ -44,7 +44,12 @@ public class Main {
         System.out.println("==== For Loop:");
         System.out.println(collectionsManupulations.runWithForLoop()+ "\n");
 
+        // ForEach
         System.out.println("==== ForEach Loop:");
-        System.out.println(collectionsManupulations.runWithForEachLoop());
+        System.out.println(collectionsManupulations.runWithForEachLoop()+ "\n");
+
+        // stream with filter
+        System.out.println("==== stream filter:");
+        System.out.println(collectionsManupulations.runWithStreams());
     }
 }

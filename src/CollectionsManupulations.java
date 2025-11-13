@@ -127,8 +127,18 @@ public class CollectionsManupulations {
     // ForEach
     public String runWithForEachLoop() {
         List<String> list = getMyArrayList();
-        list.forEach(item -> System.out.println(item));
+        list.forEach(System.out::println);
         return "ForEach finished";
+    }
+
+    // Stream with filter
+    public String runWithStreams() {
+        List<String> myList = getMyArrayList();
+        myList.stream()
+                .filter(item -> item.startsWith("A"))
+                .forEach(System.out::println);
+
+        return "stream finished";
     }
 
 }
