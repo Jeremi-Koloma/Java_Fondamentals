@@ -42,7 +42,9 @@ public class Main {
 
         // For Loop
         System.out.println("==== For Loop:");
-        System.out.println(collectionsManupulations.runWithForLoop());
+        System.out.println(collectionsManupulations.runWithForLoop()+ "\n");
 
+        System.out.println("==== ForEach Loop:");
+        System.out.println(collectionsManupulations.runWithForEachLoop());
     }
 }

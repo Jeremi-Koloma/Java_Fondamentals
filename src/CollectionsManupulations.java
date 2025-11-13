@@ -110,7 +110,7 @@ public class CollectionsManupulations {
 
     /**
      * PARCOURS DES COLLECTIONS
-     *
+     * For - ForEach - Stream
      * @return
      */
 
@@ -122,6 +122,13 @@ public class CollectionsManupulations {
         }
 
         return "For Loop finished";
+    }
+
+    // ForEach
+    public String runWithForEachLoop() {
+        List<String> list = getMyArrayList();
+        list.forEach(item -> System.out.println(item));
+        return "ForEach finished";
     }
 
 }
