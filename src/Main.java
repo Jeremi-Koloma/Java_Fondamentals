@@ -49,11 +49,15 @@ public class Main {
         System.out.println(collectionsManupulations.runWithForEachLoop()+ "\n");
 
         // stream with filter:
-        System.out.println("==== stream filter with letter 'A':");
+        System.out.println("==== Stream filter with letter 'A':");
         System.out.println(collectionsManupulations.runWithStreams()+ "\n");
 
         // Collections Methods
         System.out.println("==== Collections Methods:");
-        System.out.println(collectionsManupulations.collectionsMethods());
+        System.out.println(collectionsManupulations.collectionsMethods() + "\n");
+
+        // Map Methods
+        System.out.println("==== Map Methods:");
+        System.out.println(collectionsManupulations.mapMethods());
     }
 }

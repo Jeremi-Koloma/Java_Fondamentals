@@ -145,15 +145,25 @@ public class CollectionsManupulations {
      * METHODE UTILES (COLLECTIONS & MAP)
      */
 
+    // Collections Methods
     public String collectionsMethods() {
 
         List<String> myList = getMyArrayList();
-        System.out.println(myList.size());
-        System.out.println(myList.isEmpty());
-        System.out.println(myList.contains("A"));
-        System.out.println(myList.remove("A"));
+        System.out.println("size: "+myList.size());
+        System.out.println("isEmpty: "+ myList.isEmpty());
+        System.out.println("contains: "+myList.contains("A"));
+        System.out.println("remove: "+ myList.remove("A"));
         myList.clear();
 
-        return "Method finished";
+        return "Collection Method finished";
+    }
+
+    // Map Methods
+    public String mapMethods() {
+        Map<String, String> myMap = getMyLinkedHashMap();
+        System.out.println("keySet: " + myMap.keySet()); // ensemble des clés
+        System.out.println("values: " +myMap.values()); // collections des valeurs
+
+        return "Map Method finished";
     }
 }
