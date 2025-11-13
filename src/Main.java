@@ -10,7 +10,7 @@ public class Main {
         System.out.println("==== ArrayList: ");
         System.out.println(myArrayList.get(1)+ "\n");
 
-        // LinkedList: Accès par index
+        // LinkedList: Rapide en insertion
         List<String> myLinkedList = collectionsManupulations.getMyLinkedList();
         System.out.println("==== LinkedList: ");
         System.out.println(myLinkedList.get(2)+ "\n");
