@@ -106,4 +106,22 @@ public class CollectionsManupulations {
         System.out.println(myLinkedHashMap.get("job2"));
         return myLinkedHashMap;
     }
+
+
+    /**
+     * PARCOURS DES COLLECTIONS
+     *
+     * @return
+     */
+
+    // For
+    public String runWithForLoop() {
+        List<String> myList = getMyArrayList();
+        for (String item : myList) {
+            System.out.println(item);
+        }
+
+        return "For Loop finished";
+    }
+
 }

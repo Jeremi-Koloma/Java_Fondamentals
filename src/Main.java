@@ -38,6 +38,11 @@ public class Main {
         // LinkedHashMap: Conserve l'ordre d'insertion
         Map<String, String> myLinkedHashMap = collectionsManupulations.getMyLinkedHashMap();
         System.out.println("==== myLinkedHashMap:");
-        System.out.println(myLinkedHashMap);
+        System.out.println(myLinkedHashMap+ "\n");
+
+        // For Loop
+        System.out.println("==== For Loop:");
+        System.out.println(collectionsManupulations.runWithForLoop());
+
     }
 }
