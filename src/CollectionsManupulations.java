@@ -141,4 +141,19 @@ public class CollectionsManupulations {
         return "stream finished";
     }
 
+    /**
+     * METHODE UTILES (COLLECTIONS & MAP)
+     */
+
+    public String collectionsMethods() {
+
+        List<String> myList = getMyArrayList();
+        System.out.println(myList.size());
+        System.out.println(myList.isEmpty());
+        System.out.println(myList.contains("A"));
+        System.out.println(myList.remove("A"));
+        myList.clear();
+
+        return "Method finished";
+    }
 }

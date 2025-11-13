@@ -40,16 +40,20 @@ public class Main {
         System.out.println("==== myLinkedHashMap:");
         System.out.println(myLinkedHashMap+ "\n");
 
-        // For Loop
+        // For Loop:
         System.out.println("==== For Loop:");
         System.out.println(collectionsManupulations.runWithForLoop()+ "\n");
 
-        // ForEach
+        // ForEach:
         System.out.println("==== ForEach Loop:");
         System.out.println(collectionsManupulations.runWithForEachLoop()+ "\n");
 
-        // stream with filter
+        // stream with filter:
         System.out.println("==== stream filter with letter 'A':");
-        System.out.println(collectionsManupulations.runWithStreams());
+        System.out.println(collectionsManupulations.runWithStreams()+ "\n");
+
+        // Collections Methods
+        System.out.println("==== Collections Methods:");
+        System.out.println(collectionsManupulations.collectionsMethods());
     }
 }
