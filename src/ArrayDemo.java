@@ -4,7 +4,7 @@ import java.util.Random;
 public class ArrayDemo {
 
     public static void main(String[] args) {
-
+        
         int[] firstArray = getRandomArray(10);
         System.out.println("First Array: " + Arrays.toString(firstArray));
 
